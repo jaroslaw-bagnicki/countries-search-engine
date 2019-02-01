@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <title>Country search engine</title>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <!-- <link rel="stylesheet" href="form-reset.css"> -->
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -14,20 +15,24 @@
 <body>
 
   <div class="container">
+    <div class="card">
 
-    <h1 class="title">Country search engine</h1>
+      <h1 class="title">Country search engine</h1>
+  
+      <div class="search-box">
+        <input id="search-input" type="text" class="input" />
+        <button id="search-btn" class="btn"><i class="fas fa-search"></i></button>
+      </div>
+  
+      <div class="results-box">
+        <h2>List of countries: </h2>
+        <ul id="countries-list" class="countries-list">
+          <li>No data</li>
+        </ul>
+      </div>
 
-    <div class="search-box">
-      <button id="search-btn">Search</button>
-      <input id="search-input" type="text" />
     </div>
-
-    <div class="results-box">
-      <h2>List of countries: </h2>
-      <ul id="countries-list" class="countries-list">
-        <li>No data</li>
-      </ul>
-    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="script.js"></script>

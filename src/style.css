@@ -11,73 +11,99 @@ html {
   box-sizing: inherit;
 }
 
+/* Form reset */
+
+button,
+input {
+  margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+	font-size: 100%;
+	font-family: inherit;
+	color: inherit;
+}
+
+input:focus,
+button:focus,
+select:focus {
+	outline: 0;
+}
+
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
   color: #2d3436;
+  background-color: #dfe6e9;
+  font-size: 18px;
   font-weight: 400;
 }
 
-/* .container {
-  max-width: 700px;
+.container {
+  width: 600px;
+  max-width: 90%;
   height: 100vh;
   min-height: 600px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.quote-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 40px 0;
-}
-
-.header,
-.quote,
-.author {
-  text-align: center;
-}
-
-.header {
-  font-size: 48px;
-}
-
-.quote {
-  height: 105px;
-  font-size: 28px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
-.author {
-  height: 28px;
-  margin-top: 0;
-  font-size: 22px;
+.card {
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 30px;
+  box-shadow: 0 1rem 3rem rgba(125, 125, 125, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input,
+.btn {
+  height: 40px;
+  border-radius: 99px;
+}
+
+.input {
+  padding: 0 20px;
+  border: 3px solid #dfe6e9;
 }
 
 .btn {
-  display: block;
-  margin: 15px 0;
-  padding: 10px 15px;
-  min-width: 400px;
-  border: 1px solid rgba(255, 255, 255, .7);
-  border-radius: 5px;
-  color: rgba(255, 255, 255, .7);
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
+  width: 40px;
+  background-color: #dfe6e9;
+  color: #636e72;
   transition: .2s;
+  cursor: pointer;
+}
+
+.btn .fas {
+  font-size: 17px;
 }
 
 .btn:hover {
-  border-color: #fff;
-  color: #fff;
-} */
+  background-color: hsl(198, 19%, 84%);
+}
+
+.results-box {
+  align-self: stretch;
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.countries-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow-y: auto;
+  flex-grow: 1;
+}
