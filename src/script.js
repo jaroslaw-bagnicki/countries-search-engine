@@ -2,17 +2,14 @@
 var URL = 'https://restcountries.eu/rest/v1/name/';
 
 // UI bindings
-var searchInput = $('#search-input').keyup(handleTyping);
+var searchInput = $('#search-input').keyup(debounce(handleTyping, 1000));
 var searchLabel = $('#search-label').click(searchCountries);
 var searchLabelIcon = searchLabel.find('.fas');
 var countriesList = $('#countries-list');
 
 function handleTyping(e) {
-  if (e.key === 'Enter') {
-    searchCountries(); 
-  } else {
-    countriesList.empty();
-  }
+  countriesList.empty();
+  searchCountries(); 
 }
 
 function searchCountries() {
