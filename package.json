@@ -1,0 +1,23 @@
+{
+  "name": "qoute_machine",
+  "version": "1.0.0",
+  "description": "Random quote machine",
+  "main": "script.js",
+  "scripts": {
+    "start": "browser-sync start  --server src --files src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaroslaw-bagnicki/kodilla_16.2-random-qoute.git"
+  },
+  "author": "Jarosław Bagnicki <jarek@bagnicki.net>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/jaroslaw-bagnicki/kodilla_16.2-random-qoute/issues"
+  },
+  "homepage": "https://github.com/jaroslaw-bagnicki/kodilla_16.2-random-qoute#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "live-server": "^1.2.1"
+  }
+}
