@@ -2,11 +2,18 @@
 var URL = 'https://restcountries.eu/rest/v1/name/';
 
 // UI bindings
-var searchBtn = $('#search-btn').click(searchCountries);
-var searchBtnIcon = searchBtn.find('.fas');
-var searchInput = $('#search-input');
+var searchInput = $('#search-input').keyup(handleTyping);
+var searchLabel = $('#search-label').click(searchCountries);
+var searchLabelIcon = searchLabel.find('.fas');
 var countriesList = $('#countries-list');
 
+function handleTyping(e) {
+  if (e.key === 'Enter') {
+    searchCountries(); 
+  } else {
+    countriesList.empty();
+  }
+}
 
 function searchCountries() {
   var countryName = searchInput.val();
@@ -39,5 +46,5 @@ function requestError(res) {
 }
 
 function toggleSpinner() {
-  searchBtnIcon.toggleClass('fa-search fa-circle-notch fa-spin');
+  searchLabelIcon.toggleClass('fa-search fa-circle-notch fa-spin');
 }

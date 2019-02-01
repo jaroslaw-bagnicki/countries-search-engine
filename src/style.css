@@ -65,31 +65,38 @@ body {
   align-items: center;
 }
 
-.input,
-.btn {
+.search-box {
+  position: relative;
+}
+
+
+.search-input,
+.search-label {
   height: 40px;
   border-radius: 99px;
 }
 
-.input {
+.search-input {
+  
   padding: 0 20px;
   border: 3px solid #dfe6e9;
 }
 
-.btn {
+.search-label {
+  position: absolute;
+  top:0;
+  right: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   background-color: #dfe6e9;
   color: #636e72;
-  transition: .2s;
   cursor: pointer;
 }
 
-.btn .fas {
+.search-label .fas {
   font-size: 17px;
-}
-
-.btn:hover {
-  background-color: hsl(198, 19%, 84%);
 }
 
 .results-box {
