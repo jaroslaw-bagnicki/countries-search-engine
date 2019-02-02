@@ -8,16 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaroslaw-bagnicki/kodilla_16.2-random-qoute.git"
+    "url": "git+http@github.com:jaroslaw-bagnicki/countries-search-engine.git"
   },
   "author": "Jarosław Bagnicki <jarek@bagnicki.net>",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/jaroslaw-bagnicki/kodilla_16.2-random-qoute/issues"
+    "url": "https://github.com/jaroslaw-bagnicki/countries-search-engine/issues"
   },
-  "homepage": "https://github.com/jaroslaw-bagnicki/kodilla_16.2-random-qoute#readme",
+  "homepage": "https://amazing-mayer-f8b7f7.netlify.com/",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "live-server": "^1.2.1"
+    "browser-sync": "^2.26.3"
   }
 }
