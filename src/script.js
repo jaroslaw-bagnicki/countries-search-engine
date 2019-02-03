@@ -20,15 +20,15 @@ function searchCountries() {
     $.ajax({
       url: URL + countryName,
       method: 'GET',
-      success: showCuntriesList,
+      success: showCountriesList,
       error: requestError
     });
   }
 }
 
-function showCuntriesList(countriesData) {
+function showCountriesList(countriesData) {
   countriesData.forEach(function(country) {
-    countriesList.append('<li>' + country.name + '</li>');
+    countriesList.append('<li>' + country.name + ' ( capital: ' + country.capital + ' )</li>');
   });
   toggleSpinner();
 }
